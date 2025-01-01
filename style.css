@@ -1,0 +1,150 @@
+/* 全局样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* 导航栏样式 */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+/* 主要内容区域 */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 首页样式 */
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: #f4f4f4;
+    margin-bottom: 2rem;
+}
+
+.about {
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* 项目介绍页样式 */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+/* 注册/登录页样式 */
+.auth-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.auth-tabs {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.tab-link {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    background: #f4f4f4;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tab-link.active {
+    background: #333;
+    color: #fff;
+}
+
+.auth-form {
+    display: none;
+}
+
+.auth-form.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #555;
+}
+
+/* 页脚样式 */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}

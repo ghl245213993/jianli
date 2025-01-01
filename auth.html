@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册/登录</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="projects.html">项目介绍</a></li>
+                <li><a href="auth.html">注册/登录</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="auth-container">
+            <div class="auth-tabs">
+                <button class="tab-link active" data-tab="login">登录</button>
+                <button class="tab-link" data-tab="register">注册</button>
+            </div>
+
+            <div id="login" class="auth-form active">
+                <h2>登录</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="login-email">邮箱</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">密码</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit">登录</button>
+                </form>
+            </div>
+
+            <div id="register" class="auth-form">
+                <h2>注册</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="register-name">姓名</label>
+                        <input type="text" id="register-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">邮箱</label>
+                        <input type="email" id="register-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">密码</label>
+                        <input type="password" id="register-password" required>
+                    </div>
+                    <button type="submit">注册</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 个人简历</p>
+    </footer>
+
+    <script>
+        // 切换注册/登录表单
+        const tabs = document.querySelectorAll('.tab-link');
+        const forms = document.querySelectorAll('.auth-form');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // 移除所有active类
+                tabs.forEach(t => t.classList.remove('active'));
+                forms.forEach(f => f.classList.remove('active'));
+
+                // 添加active类到当前tab和对应的form
+                tab.classList.add('active');
+                const target = tab.dataset.tab;
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
