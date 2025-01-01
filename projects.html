@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="example-header">
+        <h1>页眉示例 (header)</h1>
+        <p>header标签通常用于包含介绍性内容或导航链接。</p>
         <nav>
             <ul>
                 <li><a href="index.html">首页</a></li>
@@ -20,6 +22,26 @@
     
     <main>
         <h1>我的项目</h1>
+        
+        <section class="list-examples">
+            <h2>无序列表示例</h2>
+            <ul>
+                <li>前端开发项目</li>
+                <li>后端开发项目</li>
+                <li>全栈开发项目</li>
+            </ul>
+
+            <h2>有序列表示例</h2>
+            <ol>
+                <li>项目需求分析</li>
+                <li>项目设计</li>
+                <li>项目开发</li>
+                <li>项目测试</li>
+                <li>项目部署</li>
+            </ol>
+            
+            <p>无序列表(ul)用于表示没有特定顺序的项目，有序列表(ol)用于表示有顺序或步骤的项目。每个列表项都应该使用li标签包裹。</p>
+        </section>
         
         <div class="projects-grid">
             <div class="project-card">
@@ -39,8 +61,17 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="example-footer">
+        <h2>页脚示例 (footer)</h2>
+        <p>footer标签通常包含版权信息、相关链接等内容。</p>
         <p>&copy; 2023 个人简历</p>
+        <nav>
+            <ul>
+                <li><a href="#privacy">隐私政策</a></li>
+                <li><a href="#terms">服务条款</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

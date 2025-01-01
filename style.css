@@ -183,3 +183,37 @@ footer {
     border-radius: 5px; /* 设置圆角 */
     margin-bottom: 1rem; /* 设置下边距 */
 }
+
+/* 示例页脚样式 */
+.example-footer {
+    background: #ffeb3b; /* 亮黄色背景 */
+    color: #000; /* 黑色文字 */
+    padding: 2rem; /* 增加内边距 */
+    border-top: 3px solid #fbc02d; /* 顶部边框 */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* 顶部阴影 */
+}
+
+.example-footer h2 {
+    color: #f57c00; /* 橙色标题 */
+    margin-bottom: 1rem; /* 标题下边距 */
+}
+
+.example-footer nav ul {
+    list-style: none; /* 去除列表样式 */
+    padding: 0; /* 去除内边距 */
+    display: flex; /* 弹性布局 */
+    justify-content: center; /* 水平居中 */
+    gap: 1rem; /* 项目间距 */
+}
+
+.example-footer nav a {
+    color: #e65100; /* 深橙色链接 */
+    text-decoration: none; /* 去除下划线 */
+    font-weight: bold; /* 加粗字体 */
+}
+
+.example-footer nav a:hover {
+    color: #ff6f00; /* 悬停时更亮的橙色 */
+    transform: scale(1.1); /* 放大10% */
+    transition: transform 0.3s ease; /* 添加平滑过渡 */
+}
